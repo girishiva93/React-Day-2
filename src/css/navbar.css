@@ -1,0 +1,38 @@
+/* Header */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Mada", sans-serif;
+}
+
+.row {
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+
+.contact-btn {
+  background-color: #6b717a; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 10rem;
+  float: right;
+}
+
+.col-8 h1 {
+  color: #6b717a;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding-top: 10px;
+}
+
+.col-4 {
+  float: right !important;
+}
+
+/* Header End */

@@ -1,0 +1,178 @@
+.bg_color{
+    background-color: rgb(211, 211, 211, 0.5);
+}
+
+.col{
+    flex: 1 0;
+    background: white;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    padding-top: 40px;
+    border-radius: 20px;
+}
+
+.heading{
+    padding-top: 50px;
+    margin-left: 50px;
+    font-weight: 530;
+}
+
+.heading h3{
+    margin-left: 20px;
+}
+
+.form_container {
+  max-width: 1000px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+  padding-left: 129px;
+}
+
+#progressbar .active {
+  color: #673ab7;
+  z-index: 1;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 25%;
+  float: left;
+  position: relative;
+  font-weight: 400;
+}
+
+#progressbar #account:before {
+  content: "1";
+  text-align: center;
+}
+
+#progressbar #personal:before {
+  content: "2";
+  text-align: center;
+}
+
+#progressbar #payment:before {
+  content: "3";
+  text-align: center;
+}
+
+#progressbar #confirm:before {
+  content: "4";
+  text-align: center;
+}
+
+#progressbar li:before {
+  width: 50px;
+  height: 50px;
+  line-height: 45px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  padding: 2px;
+}
+
+#progressbar li:after {
+  content: "";
+  width: 57%;
+  height: 7px;
+  background: lightgray;
+  position: absolute;
+  left: 66px;
+  top: 25px;
+  border-radius: 26px;
+  z-index: 1;
+}
+
+#progressbar #confirm:after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 25px;
+  z-index: -1;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #673ab7;
+}
+
+.progress {
+  height: 20px;
+}
+
+.progress-bar {
+  background-color: #673ab7;
+}
+
+.fit-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.form_product_img {
+    width: 150px;
+    border-radius: 26px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.col-3 h5 {
+  font-weight: 500;
+}
+
+.col-3 p {
+  color: lightgray;
+}
+
+.col-3 {
+  float: left;
+}
+
+.col-4{
+    width: 53.333333% !important
+}
+
+.col-4 p{
+    color: lightgray;
+}
+
+.col-4 h5{
+    padding-top: 40px;
+}
+
+.col-6{
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    width: 40% !important;
+    margin-left: 30px;
+    border-radius: 1rem;
+    margin-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.contact-btn{
+    background-color: #6b717a; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10rem;
+    float: right;
+    margin-top: 20px;
+}

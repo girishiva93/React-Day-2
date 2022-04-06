@@ -1,0 +1,12 @@
+/* Header */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Mada", sans-serif;
+  }
+
+  .footer{
+      color: #6b717a;
+      margin: 1rem 0rem 1rem 0rem;
+  }
