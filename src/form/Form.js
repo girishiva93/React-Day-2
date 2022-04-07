@@ -74,7 +74,56 @@ const Form = () => {
                       <hr />
                       <div>
                         <div className="heading">
-                          <h3>Select Service Category</h3>
+                          <div className="row">
+                            <div className="col-md-6">
+                              <h3>Select Service</h3>
+                            </div>
+                            <div className="col-md-6">
+                              <input type="text" placeholder="Search Product" />
+                            </div>
+                          </div>
+                          <div className="row">
+                            <div className="col-md-3">
+                              <img
+                                src={image}
+                                className="product_item_name"
+                                alt="Title"
+                                width="100%"
+                              />
+                              <p className="price">$20</p>
+                              <p>Plumbing Service</p>
+                            </div>
+                            <div className="col-md-3">
+                              <img
+                                src={image}
+                                alt="Title"
+                                className="product_item_name"
+                                width="100%"
+                              />
+                              <p className="price">$20</p>
+                              <p>Plumbing Service</p>
+                            </div>
+                            <div className="col-md-3">
+                              <img
+                                src={image}
+                                alt="Title"
+                                className="product_item_name"
+                                width="100%"
+                              />
+                              <p className="price">$20</p>
+                              <p>Plumbing Service</p>
+                            </div>
+                            <div className="col-md-3">
+                              <img
+                                src={image}
+                                alt="Title"
+                                className="product_item_name"
+                                width="100%"
+                              />
+                              <p className="price">$20</p>
+                              <p>Plumbing Service</p>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

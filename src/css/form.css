@@ -212,3 +212,14 @@
   border-radius: 2.25rem;
 }
 
+.product_item_name{
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+  border-radius: 1rem;
+}
+
+.price {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
