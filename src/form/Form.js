@@ -4,7 +4,6 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "../css/form.css";
 import image from "../form/src/first.jpg";
-import { Link } from "react-router-dom";
 
 const Form = () => {
   const [valid, setValid] = useState();
@@ -95,7 +94,7 @@ const Form = () => {
                             <h4>Contact</h4>
                             <div class="row">
                               <div class="col-md-6">
-                                <label for="Name" className="name_id">
+                                <label htmlFor="Name" className="name_id">
                                   Name
                                 </label>
                                 <input
@@ -105,7 +104,7 @@ const Form = () => {
                                 />
                               </div>
                               <div class="col-md-6">
-                                <label for="Name" className="name_id">
+                                <label htmlFor="Email" className="name_id">
                                   Email
                                 </label>
                                 <input
@@ -115,7 +114,7 @@ const Form = () => {
                                 />
                               </div>
                               <div class="col-md-6">
-                                <label for="Name" className="name_id">
+                                <label htmlFor="Phone" className="name_id">
                                   Phone Number
                                 </label>
                                 <input
@@ -125,7 +124,7 @@ const Form = () => {
                                 />
                               </div>
                               <div class="col-md-6">
-                                <label for="Name" className="name_id">
+                                <label htmlFor="Address" className="name_id">
                                   Address
                                 </label>
                                 <input
@@ -167,10 +166,28 @@ const Form = () => {
                       </div>
                     </div>
                   ) : null}
+
+                  {count === 5 ? (
+                    <div>
+                      <ul id="progressbar">
+                        <li id="account"></li>
+                        <li id="personal"></li>
+                        <li id="payment"></li>
+                        <li className="active" id="confirm"></li>
+                      </ul>
+                      <hr />
+                      <div>
+                        <div className="heading">
+                          <h1>Service Request Send </h1>
+                          <p>Thankyou for being our valued customer</p>
+                        </div>
+                      </div>
+                    </div>
+                  ) : null}
                 </form>
               </div>
               <div className="next">
-                {count === 4 ? (
+                {count === 5 ? (
                   <button
                     className="contact-btn"
                     onClick={() => {
