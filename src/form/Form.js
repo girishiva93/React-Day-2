@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "../css/form.css";
 import image from "../form/src/first.jpg";
+import { Link } from "react-router-dom";
 
 const Form = () => {
   const [valid, setValid] = useState();
@@ -73,7 +74,9 @@ const Form = () => {
                       </ul>
                       <hr />
                       <div>
-                        <h1>hello</h1>
+                        <div className="heading">
+                          <h3>Select Service Category</h3>
+                        </div>
                       </div>
                     </div>
                   ) : null}
@@ -87,7 +90,53 @@ const Form = () => {
                       </ul>
                       <hr />
                       <div>
-                        <h1>Entry Form</h1>
+                        <form>
+                          <div className="heading">
+                            <h4>Contact</h4>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <label for="Name" className="name_id">
+                                  Name
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="First name"
+                                />
+                              </div>
+                              <div class="col-md-6">
+                                <label for="Name" className="name_id">
+                                  Email
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Last name"
+                                />
+                              </div>
+                              <div class="col-md-6">
+                                <label for="Name" className="name_id">
+                                  Phone Number
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Last name"
+                                />
+                              </div>
+                              <div class="col-md-6">
+                                <label for="Name" className="name_id">
+                                  Address
+                                </label>
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Last name"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </form>
                       </div>
                     </div>
                   ) : null}
@@ -101,7 +150,20 @@ const Form = () => {
                       </ul>
                       <hr />
                       <div>
-                        <h1>Success</h1>
+                        <div className="heading">
+                          <h4>Service Details</h4>
+                          <div class="form-group">
+                            <label for="comment" className="message_title">
+                              Remarks:
+                            </label>
+                            <textarea
+                              className="form-control-message"
+                              rows="10"
+                              id="comment"
+                              placeholder="Service Remarks"
+                            ></textarea>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   ) : null}
@@ -112,11 +174,10 @@ const Form = () => {
                   <button
                     className="contact-btn"
                     onClick={() => {
-                      setCount(count + 1);
+                      setCount(1);
                     }}
-                    style={NONE}
                   >
-                    Next
+                    Home
                   </button>
                 ) : (
                   <button
