@@ -20,6 +20,7 @@ const Form = () => {
     setPerson({ ...person, [name]: value });
     // console.log(name, value);
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (person.fullName && person.email && person.address && person.phone) {
