@@ -224,6 +224,10 @@
   border: 3px solid black;
 }
 
+.col-6:hover{
+  border: 3px solid black;
+}
+
 .price {
   font-size: 1.5rem;
   font-weight: 600;
