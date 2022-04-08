@@ -4,6 +4,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "../css/form.css";
 import image from "../form/src/first.jpg";
+import { MdCloudDone } from "react-icons/md";
 
 const Form = () => {
   const [value, setValue] = useState("");
@@ -267,8 +268,9 @@ const Form = () => {
                       <li className="active" id="confirm"></li>
                     </ul>
                     <hr />
-                    <div>
+                    <div className="success_container">
                       <div className="heading">
+                        <MdCloudDone className="submit_success" />
                         <h1>Service Request Send </h1>
                         <p>Thankyou for being our valued customer</p>
                       </div>
