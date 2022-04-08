@@ -26,7 +26,7 @@ const Form = () => {
       e.preventDefault();
       const newData = { ...person, id: new Date().getTime().toString() };
       setValue([...person, newData]);
-
+      setError("Success");
       setPerson({ fullName: "", email: "", address: "", phone: "" });
     } else {
       setError("Some of the value are empty");
@@ -103,7 +103,11 @@ const Form = () => {
                             <h3>Select Service</h3>
                           </div>
                           <div className="col-md-6">
-                            <input type="text" placeholder="Search Product" />
+                            <input
+                              type="text"
+                              className="form-control-search"
+                              placeholder="Search Product"
+                            />
                           </div>
                         </div>
                         <div className="row">
@@ -243,7 +247,7 @@ const Form = () => {
                           </label>
                           <textarea
                             className="form-control-message"
-                            rows="10"
+                            rows="7"
                             id="comment"
                             placeholder="Service Remarks"
                           ></textarea>
@@ -270,27 +274,27 @@ const Form = () => {
                     </div>
                   </div>
                 ) : null}
-                <div className="next">
-                  {count === 5 ? (
-                    <button
-                      className="contact-btn"
-                      onClick={() => {
-                        setCount(1);
-                      }}
-                    >
-                      Home
-                    </button>
-                  ) : (
-                    <button
-                      className="contact-btn"
-                      onClick={() => {
-                        setCount(count + 1);
-                      }}
-                    >
-                      Next
-                    </button>
-                  )}
-                </div>
+              </div>
+              <div className="next">
+                {count === 5 ? (
+                  <button
+                    className="contact-btn"
+                    onClick={() => {
+                      setCount(1);
+                    }}
+                  >
+                    Home
+                  </button>
+                ) : (
+                  <button
+                    className="contact-btn"
+                    onClick={() => {
+                      setCount(count + 1);
+                    }}
+                  >
+                    Next
+                  </button>
+                )}
               </div>
             </div>
           </div>
